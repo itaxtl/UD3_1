@@ -33,3 +33,14 @@ function validarCiudad() {
 		return false;
 	}
 }
+
+function validarEdad() {
+	var campoEdad = document.getElementById('campoEdad');
+	if (/^[a-zA-Z ]{2,30}$/.test(campoEdad.value)) {
+		return true;
+	} else {
+		return false;
+	}
+}
+
+//    /(((0|1)[0-9]|2[0-9]|3[0-1])\/(0[1-9]|1[0-2])\/((19|20)\d\d))$/;
