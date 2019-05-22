@@ -1,5 +1,18 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 function validarForm() {
+    if (!validarTelefono()) {
+        return false;
+    }
+    if (!validarNombre()) {
+        return false;
+    }
+    if (!validarEdad()) {
+        return false;
+    }
+    if (!validarCuidad()) {
+        return false;
+    }
     if (!validarTelefono()) {
         return false;
     }
@@ -7,6 +20,17 @@ function validarForm() {
 
 }
 =======
+=======
+
+
+
+
+
+
+
+
+
+>>>>>>> 0b1a394f906bb668364b3eef092ff8500d7aec0d
 function validarTelefono() {
 	var campoTelefono = document.getElementById('campoTelefono');
 	if (/^\d{9}$/.test(campoTelefono.value)) {
