@@ -7,6 +7,10 @@ span {
   background: black;
 }
 
+form {
+  padding: 1em;
+}
+
 .mal {
   background: #F9627D;
 }
