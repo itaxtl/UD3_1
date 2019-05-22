@@ -1,14 +1,16 @@
 h1 {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
-div {
+
+span {
   padding: 1em;
   background: black;
+}
 
-}
 .mal {
-color:#F9627D;
+  background: #F9627D;
 }
+
 .bien {
- color: #83B692;
+  background: #83B692;
 }
