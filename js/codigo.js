@@ -1,3 +1,12 @@
+
+
+
+
+
+
+
+
+
 function validarTelefono() {
 	var campoTelefono = document.getElementById('campoTelefono');
 	if (/^\d{9}$/.test(campoTelefono.value)) {
