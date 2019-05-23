@@ -12,18 +12,17 @@
     <h2>(by Estela, Román y Roberto)</h2> <br><br>
     <h3>Anda, rellena los siguientes campos:</h3>
     <form action="#">
-        <span id="error" ></span>
         <label for="campoNombre">Nombre de usuario: <!-- lo que está dentro de las comillas del for es lo de las comillas del id -->
-            <input type="text" name="campoNombre" id="campoNombre" placeholder="-- Tu nombre de usurario --" onblur="return validarNombre();">
+            <input type="text" name="campoNombre" id="campoNombre" placeholder="-- Tu nombre de usurario --" onblur="return validarNombre();"><span id="errorNombre" ></span>
         </label><br>
         <label for="campoEdad">Edad:
-            <input type="text" name="campoEdad" id="campoEdad" placeholder="-- Tu edad, la de verdad --" onblur="return validarEdad();">
+            <input type="text" name="campoEdad" id="campoEdad" placeholder="-- Tu edad, la de verdad --" onblur="return validarEdad();"><span id="errorEdad" ></span>
         </label><br>
         <label for="campCiudad">Ciudad de residencia:
-            <input type="text" name="campCiudad" id="campCiudad" placeholder="-- Ciudad en que vives --" onblur="return validarCuidad();">
+            <input type="text" name="campCiudad" id="campCiudad" placeholder="-- Ciudad en que vives --" onblur="return validarCuidad();"><span id="errorCiudad" ></span>
         </label><br>
         <label for="campoTelefono">Teléfono:
-            <input type="text" name="campoTelefono" id="campoTelefono" placeholder="-- 555-XXXXXX ---" onblur="return validarTelefono();">
+            <input type="text" name="campoTelefono" id="campoTelefono" placeholder="-- 555-XXXXXX ---" onblur="return validarTelefono();"><span id="errorTelfono" ></span>
         </label><br>
         <input type="submit" value="Enviar">
     </form>
