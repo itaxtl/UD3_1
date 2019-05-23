@@ -25,3 +25,13 @@ function validarCiudad() {
 		return false;
 	}
 }
+
+function validarEdad() {
+	var campoEdad = document.getElementById('campoEdad');
+	if (/^([1-9]?\d|100)$/.test(campoEdad.value)) {
+		return true;
+	} else {
+		return false;
+	}
+}
+
