@@ -1,37 +1,36 @@
-function validarTelefono() {
-	var campoTelefono = document.getElementById('campoTelefono');
-	if (/^\d{9}$/.test(campoTelefono.value)) {
-		return true;
+function validarNombre() {
+	let campoNombre = document.getElementById('campoNombre');
+	if (/^[a-zA-Z ]{2,30}$/.test(campoNombre.value) || campoTelefono === null) {
+		campoNombre.className = "bien";
 	} else {
-		return false;
+		campoNombre.className = "mal";
 	}
 }
 
-function validarNombre() {
-	var campoNombre = document.getElementById('campoNombre');
-	if (/^[a-zA-Z ]{2,30}$/.test(campoNombre.value)) {
-		document.getElementById("error")
-		return true;
+function validarTelefono() {
+	let campoTelefono = document.getElementById('campoTelefono');
+	if (/^\d{9}$/.test(campoTelefono.value) || campoTelefono === null) {
+		campoTelefono.className = "bien";
 	} else {
-		return false;
+		campoTelefono.className = "mal";
 	}
 }
+
 
 function validarCiudad() {
-	var campoCiudad = document.getElementById('campoCiudad');
-	if (/^[a-zA-Z ]{2,30}$/.test(campoCiudad.value)) {
-		return true;
+	let campoCiudad = document.getElementById('campoCiudad');
+	if (/^[a-zA-Z ]{2,30}$/.test(campoCiudad.value) || campoCiudad === null) {
+		campoCiudad.className = "bien";
 	} else {
-		return false;
+		campoCiudad.className = "mal";
 	}
 }
 
 function validarEdad() {
-	var campoEdad = document.getElementById('campoEdad');
-	if (/^([1-9]?\d|100)$/.test(campoEdad.value)) {
-		return true;
+	let campoEdad = document.getElementById('campoEdad');
+	if (/^([1-9]?\d|100)$/.test(campoEdad.value) || campoEdad === null) {
+		campoEdad.className = "bien";
 	} else {
-		return false;
+		campoEdad.className = "mal";
 	}
 }
-
