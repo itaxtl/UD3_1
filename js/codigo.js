@@ -1,11 +1,22 @@
+function validarForm() {
+    if (!validarTelefono()) {
+        return false;
+    }
+    if (!validarNombre()) {
+        return false;
+    }
+    if (!validarEdad()) {
+        return false;
+    }
+    if (!validarCuidad()) {
+        return false;
+    }
+    if (!validarTelefono()) {
+        return false;
+    }
+    return true;
 
-
-
-
-
-
-
-
+}
 
 function validarTelefono() {
 	var campoTelefono = document.getElementById('campoTelefono');
@@ -33,10 +44,11 @@ function validarCiudad() {
 		return false;
 	}
 }
+<<<<<<< HEAD
 
 function validarEdad() {
 	var campoEdad = document.getElementById('campoEdad');
-	if (/^[a-zA-Z ]{2,30}$/.test(campoEdad.value)) {
+	if (.test(campoEdad.value)) {
 		return true;
 	} else {
 		return false;
@@ -44,3 +56,5 @@ function validarEdad() {
 }
 
 //    /(((0|1)[0-9]|2[0-9]|3[0-1])\/(0[1-9]|1[0-2])\/((19|20)\d\d))$/;
+=======
+>>>>>>> 176a30220cb14c1f13cfa8271355d570ca0ad0b7
