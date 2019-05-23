@@ -1,23 +1,3 @@
-function validarForm() {
-    if (!validarTelefono()) {
-        return false;
-    }
-    if (!validarNombre()) {
-        return false;
-    }
-    if (!validarEdad()) {
-        return false;
-    }
-    if (!validarCuidad()) {
-        return false;
-    }
-    if (!validarTelefono()) {
-        return false;
-    }
-    return true;
-
-}
-
 function validarTelefono() {
 	var campoTelefono = document.getElementById('campoTelefono');
 	if (/^\d{9}$/.test(campoTelefono.value)) {
@@ -30,6 +10,7 @@ function validarTelefono() {
 function validarNombre() {
 	var campoNombre = document.getElementById('campoNombre');
 	if (/^[a-zA-Z ]{2,30}$/.test(campoNombre.value)) {
+		document.getElementById("error")
 		return true;
 	} else {
 		return false;
